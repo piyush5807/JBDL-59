@@ -1,8 +1,10 @@
 import java.util.Arrays;
+import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class StreamClass {
 
@@ -12,15 +14,24 @@ public class StreamClass {
 
         // Q1. Find the sum of squares of even nos.
 
-        System.out.println(calculate(arr));
-        System.out.println(calculateUsingStreams(arr));
-        System.out.println(calculateUsingStreamsAndLambdas(arr));
+//        System.out.println(calculate(arr));
+//        System.out.println(calculateUsingStreams(arr));
+//        System.out.println(calculateUsingStreamsAndLambdas(arr));
 
         // 1. Correctness
         // 2. Optimized // performance, memory constraints (talk later)
         // 3. Enhance code readability
 
     }
+
+//    public static List<Integer> squareNumbers(int[]arr){
+//        Arrays.stream(arr)
+//                .boxed()
+//                .filter(x -> x%2 == 0)
+//                .map(x -> x*x)
+//                .sorted()
+//                .collect();
+//    }
 
     // boxed function just converts an IntStream --> Stream<Integer>
     // This becomes useless
