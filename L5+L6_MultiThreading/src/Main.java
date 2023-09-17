@@ -29,22 +29,22 @@ public class Main {
 //        System.out.println("sum = " + sum);
     }
 
-    private static class MyThread extends Thread{
-
-        // arr = [1000, 2000, 10000, ....]
-        // factorials = [x, y, z, ....]
-
-        @Override
-        public void run() {
-            System.out.println("Inside thread - " + currentThread());
-
-            try {
-                Thread.sleep(60000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            System.out.println("In thread - " + Thread.currentThread().getName() + ", slept for 60 secs, exiting now!!!!");
-        }
-    }
+//    private static class MyThread extends Thread{
+//
+//        // arr = [1000, 2000, 10000, ....]
+//        // factorials = [x, y, z, ....]
+//
+//        @Override
+//        public void run() {
+//            System.out.println("Inside thread - " + currentThread());
+//
+//            try {
+//                Thread.sleep(60000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//
+//            System.out.println("In thread - " + Thread.currentThread().getName() + ", slept for 60 secs, exiting now!!!!");
+//        }
+//    }
 }
